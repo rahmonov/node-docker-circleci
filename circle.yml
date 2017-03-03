@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t jahongirr/sample-node .
+
+test:
+  override:
+    - docker run jahongirr/sample-node npm test
