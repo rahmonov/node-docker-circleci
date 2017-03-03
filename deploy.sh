@@ -1,7 +1,7 @@
 #!/bin/bash
 docker push jahongirr/sample-node
 
-ssh deploy@159.203.127.59 << EOF
+ssh root@159.203.127.59 << EOF
 docker pull jahongirr/sample-node:latest
 docker stop web || true
 docker rm web || true
