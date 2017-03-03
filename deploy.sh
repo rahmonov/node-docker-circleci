@@ -1,5 +1,4 @@
 #!/bin/bash
-docker build -t jahongirr/sample-node .
 docker push jahongirr/sample-node
 
 ssh deploy@159.203.127.59 << EOF
